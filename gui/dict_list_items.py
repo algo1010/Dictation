@@ -12,6 +12,7 @@ class DictListItem(QWidget):
             self.refresh(name)
         layout = QVBoxLayout()
         layout.addWidget(self.table_view)
+        layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
     def refresh(self, name):
